@@ -1,0 +1,19 @@
+server:
+  servlet:
+    context-path: /springeventstreams
+  port: 9090
+application-description: Spring Event Stream API
+application-version: 1.0
+spring:
+  application:
+    name: SpringEventStream
+  flyway:
+    enabled: false
+  main:
+    banner-mode: console
+    allow-bean-definition-overriding: true
+    allow-circular-references: true
+  kafka:
+    bootstrap-servers: localhost:9092
+    consumer:
+      group-id: test-consumer-group
